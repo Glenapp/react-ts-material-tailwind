@@ -1,9 +1,8 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
-import Input from '../../../../components/Input';
-import { useEffect, useState } from 'react';
+import { Input } from '../../components/index';
+import { useState } from 'react';
 import authService from '../../../../services/authService';
 import { LoginRequest } from '../../../../models/service.model';
-import { environment } from '../../../../config/env.config';
 
 type Inputs = {
   email: string;
